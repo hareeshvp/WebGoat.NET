@@ -18,4 +18,5 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: bash <(curl -s -L https://detect.synopsys.com/detect.sh) --detect.tools="POLARIS" --polaris.access.token=”mjbkol964p403c2r6mks6rqbljukk4klouqoabitb1eeu9mkpvi0" --polaris.url="https://sipse.polaris.synopsys.com/" --polaris.arguments="-w"
+    script: |
+      bash <(curl -s -L https://detect.synopsys.com/detect.sh) --detect.tools="POLARIS" --polaris.access.token=”mjbkol964p403c2r6mks6rqbljukk4klouqoabitb1eeu9mkpvi0" --polaris.url="https://sipse.polaris.synopsys.com/" --polaris.arguments="-w"
